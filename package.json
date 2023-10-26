@@ -1,0 +1,11 @@
+{
+  "scripts": {
+    "start": "tsc --watch"
+  },
+  "devDependencies": {
+    "typescript": "^5.2.2"
+  },
+  "dependencies": {
+    "normalize.css": "^8.0.1"
+  }
+}

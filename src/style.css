@@ -1,0 +1,96 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100;400&display=swap');
+
+
+:root {
+    --background-color: hsl(218, 23%, 16%);
+    --background-advice-color: hsl(217, 19%, 24%);
+    --background-button-hover-color: hsl(217, 19%, 38%);
+    --background-button-color: hsl(150, 100%, 66%);
+    --text-color: hsl(193, 38%, 86%);
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+}
+
+html {
+    font-family: 'Outfit', sans-serif;
+    background-color: var(--background-color);
+    text-align: center;
+}
+
+main {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 1rem;
+}
+
+.wrapper {
+    min-height: 40vh;
+    margin: 0 auto;
+    max-width: 500px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 1.5rem;
+    background-color: var(--background-advice-color);
+    border-radius: 15px;
+    position: relative;
+
+}
+
+.advice-title {
+    color: var(--background-button-color);
+    margin-top: 1.5rem;
+    font-size: 12px;
+    letter-spacing: 3px;
+}
+
+.advice {
+    color: var(--text-color);
+    margin: 1.5rem 0;
+    font-size: 25px;
+    font-weight: 500;
+
+}
+
+.line {
+    margin-bottom: 3rem;
+
+    &>svg {
+        width: 100%;
+    }
+}
+
+.button {
+    padding: 0;
+    border: none;
+    position: relative;
+    width: 64px;
+    height: 64px;
+    position: absolute;
+    bottom: -30px;
+    background-color: var(--background-button-color);
+    border-radius: 100%;
+    cursor: pointer;
+
+    &:hover {
+        background-color: var(--background-button-hover-color);
+
+        &>svg {
+            fill: var(--text-color);
+        }
+    }
+
+    &>svg {
+        position: absolute;
+        top: 20px;
+        left: 20px;
+    }
+}
+
