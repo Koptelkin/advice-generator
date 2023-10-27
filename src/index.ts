@@ -11,7 +11,6 @@ interface Advice {
     let info: Advice;
 
     //Events
-    document.addEventListener('DOMContentLoaded', initApp);
     button?.addEventListener('click', initApp);
 
     //Logic
