@@ -15,7 +15,6 @@ var __awaiter = (this && this.__awaiter) || function (thisArg, _arguments, P, ge
     const button = document.querySelector('button');
     let info;
     //Events
-    document.addEventListener('DOMContentLoaded', initApp);
     button === null || button === void 0 ? void 0 : button.addEventListener('click', initApp);
     //Logic
     function fetchData() {
